@@ -30,7 +30,7 @@
   }
 
   main {
-   width: min(100%, 760px);
+   width: min(100%, 980px);
    padding: clamp(26px, 6vw, 52px);
    border: 1px solid #e5eaf3;
    border-radius: 24px;
@@ -62,17 +62,18 @@
 
   .retos {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr));
+   grid-template-columns: repeat(12, minmax(0, 1fr));
    gap: 14px;
   }
 
   button {
+   grid-column: span 3;
    min-height: 88px;
    display: flex;
    align-items: center;
    gap: 14px;
    padding: 16px;
-   border: 1px solid #e3e9f4;
+   border: 2px solid #c7d1e2;
    border-radius: 16px;
    background: #fff;
    color: inherit;
@@ -84,13 +85,44 @@
 
   button:hover {
    transform: translateY(-2px);
-   border-color: #b8c6ff;
+   border-color: #7188d8;
    box-shadow: 0 10px 24px rgb(53 78 145 / 10%);
   }
 
   button:focus-visible {
    outline: 3px solid #7188ff;
    outline-offset: 3px;
+  }
+
+  #miBoton7 {
+   grid-column: 8 / span 3;
+  }
+
+  #miBoton5 {
+   grid-column: 2 / span 3;
+  }
+
+  #miBoton6 {
+   grid-column: 5 / span 3;
+  }
+
+  @media (max-width: 700px) {
+   .retos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+   }
+
+   button {
+    grid-column: span 1;
+   }
+
+   #miBoton5,
+   #miBoton6 {
+    grid-column: span 1;
+   }
+
+   #miBoton7 {
+    grid-column: span 1;
+   }
   }
 
   .numero {
