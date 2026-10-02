@@ -93,7 +93,7 @@ function manejadorClick4(){
  console.log(puedeEntrar);
 
 }
-function manejadorClick6(){
+function manejadorClick5(){
  let dato1 = 25;
  let dato2 = "25";
  let dato3 = true;
