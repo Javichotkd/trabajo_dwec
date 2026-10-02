@@ -11,6 +11,7 @@ function principal() {
 }
 
 function manejadorClick1() {
+ console.clear();
  let numero1 = 17;
  let numero2 = 5;
  
@@ -32,6 +33,7 @@ function manejadorClick1() {
 }
 
 function manejadorClick2(){
+ console.clear();
  let a = 5;
  let b = 2;
  let resultado1 = a++ + b;
@@ -50,6 +52,7 @@ function manejadorClick2(){
  console.log("c =", c);
 }
 function manejadorClick3(){
+ console.clear();
  let edad1 = 18;
  let edad2 = "18";
 
@@ -62,6 +65,7 @@ function manejadorClick3(){
  console.log(edad2===18);
 }
 function manejadorClick4(){
+ console.clear();
  let edad = 19;
  let tieneEntrada = true;
  let estaVetado = false;
@@ -94,6 +98,7 @@ function manejadorClick4(){
 
 }
 function manejadorClick5(){
+ console.clear();
  let dato1 = 25;
  let dato2 = "25";
  let dato3 = true;
