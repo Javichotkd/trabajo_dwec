@@ -9,6 +9,7 @@ function principal() {
  document.getElementById("miBoton4").onclick = () => manejadorClick4();
  document.getElementById("miBoton5").onclick = () => manejadorClick5();
  document.getElementById("miBoton6").onclick = () => manejadorClick6();
+ document.getElementById("miBoton7").onclick = () => manejadorClick7();
 }
 
 function manejadorClick1() {
@@ -123,4 +124,26 @@ function manejadorClick6(){
  let mensaje = nombre + " - Precio de entrada: " + precioFinal + " €";
 
  console.log(mensaje);
+}
+
+function manejadorClick7() {
+    let x = 5;
+    let y = "5";
+
+    let a = x == y;
+    let b = x === y;
+
+    x++;
+
+    let c = x > 5 && b;
+    let d = x > 5 || b;
+
+    let resultado = d ? "ACCESO" : "DENEGADO";
+
+    console.log("a =", a);
+    console.log("b =", b);
+    console.log("x =", x);
+    console.log("c =", c);
+    console.log("d =", d);
+    console.log("resultado =", resultado);
 }
