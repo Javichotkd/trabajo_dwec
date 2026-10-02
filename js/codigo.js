@@ -62,3 +62,37 @@ function manejadorClick3(){
  console.log(edad1>15);
  console.log(edad2===18);
 }
+function manejadorClick4(){
+ let edad = 19;
+ let tieneEntrada = true;
+ let estaVetado = false;
+ 
+ // Comprobamos si puede entrar
+ let puedeEntrar = edad >= 18 && tieneEntrada && !estaVetado;
+ 
+ console.log("Datos iniciales:");
+ console.log(puedeEntrar);
+ 
+ // Prueba A
+ edad = 16;
+ tieneEntrada = true;
+ estaVetado = false;
+ 
+ puedeEntrar = edad >= 18 && tieneEntrada && !estaVetado;
+ 
+ console.log("Prueba A:");
+ console.log(puedeEntrar);
+ 
+ // Prueba B
+ edad = 25;
+ tieneEntrada = false;
+ estaVetado = false;
+ 
+ puedeEntrar = edad >= 18 && tieneEntrada && !estaVetado;
+ 
+ console.log("Prueba B:");
+ console.log(puedeEntrar);
+
+}
+
+
