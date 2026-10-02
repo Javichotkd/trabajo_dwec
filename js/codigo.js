@@ -3,6 +3,7 @@
 window.onload = principal;
 
 function principal() {
+ configurarConsolaEnPantalla();
  document.getElementById("miBoton1").onclick = () => manejadorClick1();
  document.getElementById("miBoton2").onclick = () => manejadorClick2();
  document.getElementById("miBoton3").onclick = () => manejadorClick3();
@@ -10,6 +11,23 @@ function principal() {
  document.getElementById("miBoton5").onclick = () => manejadorClick5();
  document.getElementById("miBoton6").onclick = () => manejadorClick6();
  document.getElementById("miBoton7").onclick = () => manejadorClick7();
+}
+
+function configurarConsolaEnPantalla() {
+ const pantalla = document.getElementById("pantalla-consola");
+ const logOriginal = console.log.bind(console);
+ const clearOriginal = console.clear.bind(console);
+
+ console.log = (...mensajes) => {
+  logOriginal(...mensajes);
+  pantalla.textContent += `${mensajes.join(" ")}\n`;
+  pantalla.scrollTop = pantalla.scrollHeight;
+ };
+
+ console.clear = () => {
+  clearOriginal();
+  pantalla.textContent = "";
+ };
 }
 
 function manejadorClick1() {
