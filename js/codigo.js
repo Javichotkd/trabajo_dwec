@@ -8,7 +8,6 @@ function principal() {
  document.getElementById("miBoton3").onclick = () => manejadorClick3();
  document.getElementById("miBoton4").onclick = () => manejadorClick4();
  document.getElementById("miBoton5").onclick = () => manejadorClick5();
- document.getElementById("miBoton6").onclick = () => manejadorClick6();
 }
 
 function manejadorClick1() {
@@ -49,4 +48,59 @@ function manejadorClick2(){
  console.log("Segundo caso:");
  console.log("resultado2 =", resultado2);
  console.log("c =", c);
+}
+function manejadorClick3(){
+ let edad1 = 18;
+ let edad2 = "18";
+
+ //Mostrar y calcular operaciones
+ console.log(edad1==edad2);
+ console.log(edad1===edad2);
+ console.log(edad1!=edad2);
+ console.log(edad1!==edad2);
+ console.log(edad1>15);
+ console.log(edad2===18);
+}
+function manejadorClick4(){
+ let edad = 19;
+ let tieneEntrada = true;
+ let estaVetado = false;
+ 
+ // Comprobamos si puede entrar
+ let puedeEntrar = edad >= 18 && tieneEntrada && !estaVetado;
+ 
+ console.log("Datos iniciales:");
+ console.log(puedeEntrar);
+ 
+ // Prueba A
+ edad = 16;
+ tieneEntrada = true;
+ estaVetado = false;
+ 
+ puedeEntrar = edad >= 18 && tieneEntrada && !estaVetado;
+ 
+ console.log("Prueba A:");
+ console.log(puedeEntrar);
+ 
+ // Prueba B
+ edad = 25;
+ tieneEntrada = false;
+ estaVetado = false;
+ 
+ puedeEntrar = edad >= 18 && tieneEntrada && !estaVetado;
+ 
+ console.log("Prueba B:");
+ console.log(puedeEntrar);
+
+}
+function manejadorClick5(){
+ let dato1 = 25;
+ let dato2 = "25";
+ let dato3 = true;
+ let dato4 = 7.5;
+ 
+ console.log(typeof dato1);
+ console.log(typeof dato2);
+ console.log(typeof dato3);
+ console.log(typeof dato4);
 }
