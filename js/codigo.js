@@ -50,3 +50,15 @@ function manejadorClick2(){
  console.log("resultado2 =", resultado2);
  console.log("c =", c);
 }
+function manejadorClick3(){
+ let edad1 = 18;
+ let edad2 = "18";
+
+ //Mostrar y calcular operaciones
+ console.log(edad1==edad2);
+ console.log(edad1===edad2);
+ console.log(edad1!=edad2);
+ console.log(edad1!==edad2);
+ console.log(edad1>15);
+ console.log(edad2===18);
+}
