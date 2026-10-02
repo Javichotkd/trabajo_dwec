@@ -50,4 +50,14 @@ console.log("resultado2 =", resultado2);
 console.log("c =", c);
 }
 
-function manejadorClick3() {}
+function manejadorClick3() {
+    let edad1 = 18;
+    let edad2 = "18";
+
+    console.log("edad1 == edad2:", edad1 == edad2);
+    console.log("edad1 === edad2:", edad1 === edad2);
+    console.log("edad1 != edad2:", edad1 != edad2);
+    console.log("edad1 !== edad2:", edad1 !== edad2);
+    console.log("edad1 > 15:", edad1 > 15);
+    console.log('edad2 === "18":', edad2 === "18");
+}
