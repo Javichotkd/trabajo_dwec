@@ -127,6 +127,7 @@ function manejadorClick6(){
 }
 
 function manejadorClick7() {
+    console.clear();
     let x = 5;
     let y = "5";
 
