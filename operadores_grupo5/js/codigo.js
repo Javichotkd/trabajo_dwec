@@ -8,6 +8,7 @@ function principal() {
  document.getElementById("miBoton3").onclick = () => manejadorClick3();
  document.getElementById("miBoton4").onclick = () => manejadorClick4();
  document.getElementById("miBoton5").onclick = () => manejadorClick5();
+ document.getElementById("miBoton6").onclick = () => manejadorClick6();
 }
 
 function manejadorClick1() {
@@ -108,4 +109,18 @@ function manejadorClick5(){
  console.log(typeof dato2);
  console.log(typeof dato3);
  console.log(typeof dato4);
+}
+
+function manejadorClick6(){
+ console.clear();
+ let nombre = "Lucía";
+ let edad = 17;
+ let precioEntrada = 12;
+ let descuento = 3;
+ let esSocio = true;
+
+ let precioFinal = esSocio ? precioEntrada - descuento : precioEntrada;
+ let mensaje = nombre + " - Precio de entrada: " + precioFinal + " €";
+
+ console.log(mensaje);
 }
