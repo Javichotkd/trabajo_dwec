@@ -68,7 +68,7 @@
 
   button {
    grid-column: span 3;
-   min-height: 88px;
+   height: 96px;
    display: flex;
    align-items: center;
    gap: 14px;
@@ -140,15 +140,22 @@
   .texto {
    display: grid;
    gap: 4px;
+   min-width: 0;
   }
 
   .nombre {
+   overflow: hidden;
    font-weight: 700;
+   text-overflow: ellipsis;
+   white-space: nowrap;
   }
 
   .detalle {
+   overflow: hidden;
    color: #758198;
    font-size: 0.86rem;
+   text-overflow: ellipsis;
+   white-space: nowrap;
   }
 
   @media (prefers-reduced-motion: reduce) {
