@@ -8,7 +8,6 @@ function principal() {
  document.getElementById("miBoton3").onclick = () => manejadorClick3();
  document.getElementById("miBoton4").onclick = () => manejadorClick4();
  document.getElementById("miBoton5").onclick = () => manejadorClick5();
- document.getElementById("miBoton6").onclick = () => manejadorClick6();
 }
 
 function manejadorClick1() {
@@ -94,5 +93,14 @@ function manejadorClick4(){
  console.log(puedeEntrar);
 
 }
-
-
+function manejadorClick6(){
+ let dato1 = 25;
+ let dato2 = "25";
+ let dato3 = true;
+ let dato4 = 7.5;
+ 
+ console.log(typeof dato1);
+ console.log(typeof dato2);
+ console.log(typeof dato3);
+ console.log(typeof dato4);
+}
